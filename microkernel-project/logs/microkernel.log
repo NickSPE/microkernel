@@ -1,0 +1,28 @@
+[2025-09-25 15:06:42.080] ℹ️  INFO     LOGGER          | Archivo de log establecido: logs/microkernel.log
+[2025-09-25 15:06:42.082] ℹ️  INFO     LOGGER          | Logger configurado - Nivel: INFO, Entradas máximas: 10000
+[2025-09-25 15:06:42.082] ℹ️  INFO     SYSTEM          | Sistema de logging inicializado
+[2025-09-25 15:06:42.084] ℹ️  INFO     SYSTEM          | Usando configuración por defecto
+[2025-09-25 15:06:42.090] ℹ️  INFO     KERNEL          | Microkernel inicializado
+[2025-09-25 15:06:42.091] ℹ️  INFO     SERVICE         | Servicio de archivos iniciado
+[2025-09-25 15:06:42.095] ℹ️  INFO     SERVICE         | Servicio de red iniciado
+[2025-09-25 15:06:42.937] ℹ️  INFO     SERVICE         | Servicio de controladores iniciado
+[2025-09-25 15:06:42.938] ℹ️  INFO     SERVICE         | Servicio de seguridad iniciado
+[2025-09-25 15:06:42.939] ℹ️  INFO     SYSTEM          | Aplicaciones configuradas
+[2025-09-25 15:06:42.940] ℹ️  INFO     SYSTEM          | MicrokernelOS v1.0.0 iniciado correctamente
+[2025-09-25 15:07:00.956] ℹ️  INFO     SYSTEM          | Heartbeat - Uptime: 18s, Memoria: 0.2%, Procesos: 2
+[2025-09-25 15:08:00.985] ℹ️  INFO     SYSTEM          | Heartbeat - Uptime: 78s, Memoria: 0.0%, Procesos: 0
+[2025-09-25 15:09:00.043] ℹ️  INFO     SYSTEM          | Heartbeat - Uptime: 137s, Memoria: 0.0%, Procesos: 0
+[2025-09-25 15:10:00.116] ℹ️  INFO     SYSTEM          | Heartbeat - Uptime: 197s, Memoria: 0.0%, Procesos: 0
+[2025-09-25 15:11:00.138] ℹ️  INFO     SYSTEM          | Heartbeat - Uptime: 257s, Memoria: 0.0%, Procesos: 0
+[2025-09-25 15:11:03.750] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:11:03.751] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:11:03.916] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:11:03.916] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:11:04.142] ℹ️  INFO     SERVICE         | Servicio filesystem detenido
+[2025-09-25 15:11:04.144] ℹ️  INFO     SERVICE         | Servicio network detenido
+[2025-09-25 15:11:04.145] ℹ️  INFO     SERVICE         | Servicio drivers detenido
+[2025-09-25 15:11:04.146] ℹ️  INFO     SERVICE         | Servicio security detenido
+[2025-09-25 15:11:04.147] ℹ️  INFO     KERNEL          | Kernel detenido
+[2025-09-25 15:11:04.148] ℹ️  INFO     SYSTEM          | MicrokernelOS cerrándose...
+[2025-09-25 15:11:04.149] ℹ️  INFO     SYSTEM          | Tiempo de actividad: 261.2 segundos
+[2025-09-25 15:11:04.150] ℹ️  INFO     LOGGER          | Logger cerrándose...

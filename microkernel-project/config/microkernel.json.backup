@@ -1,0 +1,70 @@
+{
+  "kernel": {
+    "max_processes": 1000,
+    "memory_limit": 536870912,
+    "process_time_slice": 10,
+    "default_priority": 5,
+    "enable_preemption": true,
+    "debug_mode": false
+  },
+  "scheduler": {
+    "algorithm": "round_robin",
+    "time_quantum": 50,
+    "max_priority": 10,
+    "aging_enabled": true,
+    "aging_factor": 1
+  },
+  "ipc": {
+    "max_message_size": 4096,
+    "max_shared_memory": 1048576,
+    "max_semaphores": 256,
+    "max_pipes": 128,
+    "message_timeout": 5.0
+  },
+  "filesystem": {
+    "max_file_size": 10485760,
+    "max_files": 10000,
+    "max_directories": 1000,
+    "case_sensitive": true,
+    "auto_backup": true
+  },
+  "network": {
+    "max_connections": 100,
+    "default_timeout": 30.0,
+    "max_packet_size": 65536,
+    "enable_dns": true,
+    "dns_cache_size": 1000
+  },
+  "security": {
+    "max_login_attempts": 3,
+    "session_timeout": 3600,
+    "password_min_length": 6,
+    "enable_audit": true,
+    "audit_max_events": 10000
+  },
+  "logging": {
+    "level": "INFO",
+    "max_entries": 10000,
+    "log_to_file": true,
+    "log_file": "microkernel.log",
+    "console_output": true,
+    "rotation_enabled": true,
+    "max_file_size": 10485760
+  },
+  "applications": {
+    "max_running_apps": 50,
+    "auto_start": [],
+    "resource_limits": {
+      "memory_per_app": 10485760,
+      "cpu_time_limit": 60.0
+    }
+  },
+  "system": {
+    "system_name": "MicrokernelOS",
+    "version": "1.0.0",
+    "timezone": "UTC",
+    "language": "es",
+    "startup_delay": 2.0,
+    "shutdown_timeout": 30.0
+  }
+}
