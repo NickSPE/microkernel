@@ -26,3 +26,90 @@
 [2025-09-25 15:11:04.148] ℹ️  INFO     SYSTEM          | MicrokernelOS cerrándose...
 [2025-09-25 15:11:04.149] ℹ️  INFO     SYSTEM          | Tiempo de actividad: 261.2 segundos
 [2025-09-25 15:11:04.150] ℹ️  INFO     LOGGER          | Logger cerrándose...
+[2025-09-25 15:43:16.923] ℹ️  INFO     LOGGER          | Archivo de log establecido: logs/microkernel.log
+[2025-09-25 15:43:16.925] ℹ️  INFO     LOGGER          | Logger configurado - Nivel: INFO, Entradas máximas: 10000
+[2025-09-25 15:43:16.926] ℹ️  INFO     SYSTEM          | Sistema de logging inicializado
+[2025-09-25 15:43:16.952] ℹ️  INFO     SYSTEM          | Configuración cargada desde config/microkernel.json
+[2025-09-25 15:43:16.953] ℹ️  INFO     KERNEL          | Microkernel inicializado
+[2025-09-25 15:43:16.954] ℹ️  INFO     SERVICE         | Servicio de archivos iniciado
+[2025-09-25 15:43:16.957] ℹ️  INFO     SERVICE         | Servicio de red iniciado
+[2025-09-25 15:43:17.877] ℹ️  INFO     SERVICE         | Servicio de controladores iniciado
+[2025-09-25 15:43:17.879] ℹ️  INFO     SERVICE         | Servicio de seguridad iniciado
+[2025-09-25 15:43:17.880] ℹ️  INFO     SYSTEM          | Aplicaciones configuradas
+[2025-09-25 15:43:17.880] ℹ️  INFO     SYSTEM          | MicrokernelOS v1.0.0 iniciado correctamente
+[2025-09-25 15:49:14.762] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:14.763] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:26.690] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:26.691] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:27.740] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:27.741] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:27.941] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:27.941] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:28.160] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:28.161] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:28.389] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:28.390] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:28.562] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:28.563] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:28.712] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:28.712] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:28.851] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:28.852] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:28.999] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:29.000] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:29.161] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:29.162] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:29.451] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:29.451] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:29.620] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:29.620] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:29.771] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:29.772] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:29.950] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:29.950] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:30.051] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:30.051] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:30.221] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:30.222] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:30.401] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:30.401] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:30.582] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:30.583] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:30.751] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:30.751] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:31.864] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:31.864] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:32.071] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:32.071] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:32.264] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:32.265] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:32.571] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:32.571] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:32.813] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:32.814] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:49:46.469] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:49:46.470] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:50:34.003] ℹ️  INFO     LOGGER          | Archivo de log establecido: logs/microkernel.log
+[2025-09-25 15:50:34.004] ℹ️  INFO     LOGGER          | Logger configurado - Nivel: INFO, Entradas máximas: 10000
+[2025-09-25 15:50:34.004] ℹ️  INFO     SYSTEM          | Sistema de logging inicializado
+[2025-09-25 15:50:34.006] ℹ️  INFO     SYSTEM          | Configuración cargada desde config/microkernel.json
+[2025-09-25 15:50:34.007] ℹ️  INFO     KERNEL          | Microkernel inicializado
+[2025-09-25 15:50:34.008] ℹ️  INFO     SERVICE         | Servicio de archivos iniciado
+[2025-09-25 15:50:34.012] ℹ️  INFO     SERVICE         | Servicio de red iniciado
+[2025-09-25 15:50:35.176] ℹ️  INFO     SERVICE         | Servicio de controladores iniciado
+[2025-09-25 15:50:35.178] ℹ️  INFO     SERVICE         | Servicio de seguridad iniciado
+[2025-09-25 15:50:35.179] ℹ️  INFO     SYSTEM          | Aplicaciones configuradas
+[2025-09-25 15:50:35.180] ℹ️  INFO     SYSTEM          | MicrokernelOS v1.0.0 iniciado correctamente
+[2025-09-25 15:56:41.435] ℹ️  INFO     SYSTEM          | Señal recibida: 2
+[2025-09-25 15:56:41.436] ℹ️  INFO     SYSTEM          | Solicitud de cierre recibida
+[2025-09-25 15:56:55.554] ℹ️  INFO     LOGGER          | Archivo de log establecido: logs/microkernel.log
+[2025-09-25 15:56:55.555] ℹ️  INFO     LOGGER          | Logger configurado - Nivel: INFO, Entradas máximas: 10000
+[2025-09-25 15:56:55.556] ℹ️  INFO     SYSTEM          | Sistema de logging inicializado
+[2025-09-25 15:56:55.557] ℹ️  INFO     SYSTEM          | Configuración cargada desde config/microkernel.json
+[2025-09-25 15:56:55.558] ℹ️  INFO     KERNEL          | Microkernel inicializado
+[2025-09-25 15:56:55.559] ℹ️  INFO     SERVICE         | Servicio de archivos iniciado
+[2025-09-25 15:56:55.562] ℹ️  INFO     SERVICE         | Servicio de red iniciado
+[2025-09-25 15:56:56.623] ℹ️  INFO     SERVICE         | Servicio de controladores iniciado
+[2025-09-25 15:56:56.625] ℹ️  INFO     SERVICE         | Servicio de seguridad iniciado
+[2025-09-25 15:56:56.626] ℹ️  INFO     SYSTEM          | Aplicaciones configuradas
+[2025-09-25 15:56:56.627] ℹ️  INFO     SYSTEM          | MicrokernelOS v1.0.0 iniciado correctamente

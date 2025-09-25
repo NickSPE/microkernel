@@ -98,6 +98,7 @@ class NetworkService:
         self.name = "NetworkService"
         self.version = "1.0"
         self.running = False
+        self.failed = False  # Para simulación de fallos
         self.connections: Dict[str, NetworkConnection] = {}
         self.packet_queue: List[NetworkPacket] = []
         self.network_interfaces = {
@@ -150,6 +151,18 @@ class NetworkService:
                 self.close_connection(conn_id)
             
             print("🔴 NET_SERVICE: Servicio de red detenido")
+    
+    def _check_service_health(self) -> bool:
+        """Verifica si el servicio está en estado funcional"""
+        if self.failed:
+            print("❌ NET_SERVICE: Servicio ha fallado - Operación rechazada")
+            return False
+        
+        if not self.running:
+            print("⚠️  NET_SERVICE: Servicio no está iniciado")
+            return False
+            
+        return True
     
     def _network_loop(self):
         """Bucle principal de procesamiento de red"""
@@ -330,6 +343,9 @@ class NetworkService:
     
     def resolve_dns(self, hostname: str) -> Optional[str]:
         """Resuelve un nombre de host a dirección IP"""
+        if not self._check_service_health():
+            return None
+            
         print(f"🔍 NET: Resolviendo DNS para {hostname}")
         
         # Simular tiempo de resolución DNS

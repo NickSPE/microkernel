@@ -269,6 +269,57 @@ class Microkernel:
         """Lista todos los servicios registrados"""
         return list(self.services.keys())
     
+    def fail_service(self, name: str) -> bool:
+        """Simula el fallo de un servicio para demostración"""
+        with self.kernel_lock:
+            if name not in self.services:
+                print(f"❌ SERVICIO {name} no existe")
+                return False
+            
+            service = self.services[name]
+            if hasattr(service, 'failed'):
+                service.failed = True
+                print(f"💥 SERVICIO {name} HA FALLADO - Simulando fallo")
+                print(f"🔧 El microkernel detectará el fallo y puede intentar recuperarlo")
+                return True
+            else:
+                print(f"⚠️  SERVICIO {name} no soporta simulación de fallos")
+                return False
+    
+    def recover_service(self, name: str) -> bool:
+        """Recupera un servicio que había fallado"""
+        with self.kernel_lock:
+            if name not in self.services:
+                print(f"❌ SERVICIO {name} no existe")
+                return False
+            
+            service = self.services[name]
+            if hasattr(service, 'failed'):
+                service.failed = False
+                print(f"✅ SERVICIO {name} RECUPERADO")
+                return True
+            else:
+                print(f"⚠️  SERVICIO {name} no soporta simulación de fallos")
+                return False
+    
+    def check_service_health(self, name: str) -> Dict[str, Any]:
+        """Verifica el estado de salud de un servicio"""
+        if name not in self.services:
+            return {"status": "not_found", "message": f"Servicio {name} no encontrado"}
+        
+        service = self.services[name]
+        if hasattr(service, 'failed') and service.failed:
+            return {
+                "status": "failed",
+                "message": f"Servicio {name} ha fallado",
+                "can_recover": True
+            }
+        else:
+            return {
+                "status": "healthy",
+                "message": f"Servicio {name} funcionando correctamente"
+            }
+    
     # ==================== INFORMACIÓN DEL SISTEMA ====================
     
     def get_system_info(self) -> Dict[str, Any]:

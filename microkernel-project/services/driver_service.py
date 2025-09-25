@@ -155,6 +155,7 @@ class DriverService:
         self.name = "DriverService"
         self.version = "1.0"
         self.running = False
+        self.failed = False  # Para simulación de fallos
         self.devices: Dict[str, VirtualDevice] = {}
         self.device_drivers: Dict[str, str] = {}  # device_id -> driver_name
         self.driver_lock = threading.RLock()
@@ -233,6 +234,18 @@ class DriverService:
         self.devices['display0'] = monitor
         
         print(f"🔧 DRIVER_SERVICE: {len(self.devices)} dispositivos por defecto creados")
+    
+    def _check_service_health(self) -> bool:
+        """Verifica si el servicio está en estado funcional"""
+        if self.failed:
+            print("❌ DRIVER_SERVICE: Servicio ha fallado - Operación rechazada")
+            return False
+        
+        if not self.running:
+            print("⚠️  DRIVER_SERVICE: Servicio no está iniciado")
+            return False
+            
+        return True
     
     def start(self):
         """Inicia el servicio de controladores"""
@@ -377,6 +390,9 @@ class DriverService:
     
     def device_read(self, device_id: str, size: int = 1024, process_id: str = "system") -> Optional[bytes]:
         """Lee datos de un dispositivo"""
+        if not self._check_service_health():
+            return None
+            
         device = self.get_device(device_id)
         if not device:
             print(f"❌ DRIVER: Dispositivo {device_id} no encontrado")
@@ -390,6 +406,9 @@ class DriverService:
     
     def device_write(self, device_id: str, data: bytes, process_id: str = "system") -> bool:
         """Escribe datos a un dispositivo"""
+        if not self._check_service_health():
+            return False
+            
         device = self.get_device(device_id)
         if not device:
             print(f"❌ DRIVER: Dispositivo {device_id} no encontrado")
@@ -403,8 +422,12 @@ class DriverService:
     
     def device_control(self, device_id: str, command: str, parameters: Dict = None) -> bool:
         """Envía un comando de control a un dispositivo"""
+        if not self._check_service_health():
+            return False
+            
         device = self.get_device(device_id)
         if not device:
+            print(f"❌ DRIVER: Dispositivo {device_id} no encontrado")
             return False
         
         print(f"🎛️  DRIVER: Comando '{command}' enviado a {device.name}")

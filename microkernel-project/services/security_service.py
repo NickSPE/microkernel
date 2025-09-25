@@ -103,6 +103,7 @@ class SecurityService:
         self.name = "SecurityService"
         self.version = "1.0"
         self.running = False
+        self.failed = False  # Para simulación de fallos
         self.users: Dict[str, User] = {}
         self.active_sessions: Dict[str, Dict[str, Any]] = {}
         self.audit_log: List[AuditEvent] = []
@@ -151,6 +152,18 @@ class SecurityService:
         self.users["guest"] = guest
         
         print(f"🔒 SECURITY: {len(self.users)} usuarios por defecto creados")
+    
+    def _check_service_health(self) -> bool:
+        """Verifica si el servicio está en estado funcional"""
+        if self.failed:
+            print("❌ SECURITY_SERVICE: Servicio ha fallado - Operación rechazada")
+            return False
+        
+        if not self.running:
+            print("⚠️  SECURITY_SERVICE: Servicio no está iniciado")
+            return False
+            
+        return True
     
     def start(self):
         """Inicia el servicio de seguridad"""
@@ -295,6 +308,9 @@ class SecurityService:
     
     def login(self, username: str, password: str) -> Optional[str]:
         """Autenticar usuario y crear sesión"""
+        if not self._check_service_health():
+            return None
+            
         with self.security_lock:
             if username not in self.users:
                 self._log_audit_event(
